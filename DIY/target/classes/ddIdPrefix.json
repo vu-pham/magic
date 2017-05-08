@@ -1,0 +1,200 @@
+{
+  "projectModelView" : {
+    "model" : {
+      "projectModel" : {
+        "datasets" : [ {
+          "dataset" : {
+            "identifier" : "dataset.quotes",
+            "title" : "Quotes ext",
+            "anchor" : {
+              "attribute" : {
+                "identifier" : "attr.quotes.id",
+                "title" : "Id",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.quotes.id",
+                    "title" : "Id",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            },
+            "attributes" : [ {
+              "attribute" : {
+                "identifier" : "attr.quotes.sector",
+                "title" : "Sector",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.quotes.sector",
+                    "title" : "Sector",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            }, {
+              "attribute" : {
+                "identifier" : "attr.quotes.market",
+                "title" : "Market",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.quotes.market",
+                    "title" : "Market",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            }, {
+              "attribute" : {
+                "identifier" : "attr.quotes.symbol",
+                "title" : "Symbol",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.quotes.symbol.company",
+                    "title" : "Company",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                }, {
+                  "label" : {
+                    "identifier" : "label.quotes.symbol",
+                    "title" : "Symbol",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            }, {
+              "attribute" : {
+                "identifier" : "attr.quotes.industry",
+                "title" : "Industry",
+                "labels" : [ {
+                  "label" : {
+                    "identifier" : "label.quotes.industry",
+                    "title" : "Industry",
+                    "type" : "GDC.text",
+                    "dataType" : "VARCHAR(128)"
+                  }
+                } ]
+              }
+            } ],
+            "facts" : [ {
+              "fact" : {
+                "identifier" : "fact.quotes.volume",
+                "title" : "Volume",
+                "dataType" : "DECIMAL(12,2)"
+              }
+            }, {
+              "fact" : {
+                "identifier" : "fact.quotes.openprice",
+                "title" : "Open Price",
+                "dataType" : "DECIMAL(12,2)"
+              }
+            }, {
+              "fact" : {
+                "identifier" : "fact.quotes.closeprice",
+                "title" : "Close Price",
+                "dataType" : "DECIMAL(12,2)"
+              }
+            }, {
+              "fact" : {
+                "identifier" : "fact.quotes.adjustedcloseprice",
+                "title" : "Adjusted Close Price",
+                "dataType" : "DECIMAL(12,2)"
+              }
+            }, {
+              "fact" : {
+                "identifier" : "fact.quotes.lowprice",
+                "title" : "Low Price",
+                "dataType" : "DECIMAL(12,2)"
+              }
+            }, {
+              "fact" : {
+                "identifier" : "fact.quotes.highprice",
+                "title" : "High Price",
+                "dataType" : "DECIMAL(12,2)"
+              }
+            } ],
+            "references" : [ "feb01yrplus1", "datetwcfiscal.twc_dataset.dt", "fiscaloct1.fiscalOct1_dataset.dt", "date2", "date4s.twc_dataset.dt", "date3" ],
+            "production" : true
+          }
+        } ],
+        "dateDimensions" : [ {
+          "dateDimension" : {
+            "name" : "feb01yrplus1",
+            "title" : "Date",
+            "production" : true,
+            "urn" : "urn:gooddata:date",
+            "identifier" : "feb01yrplus1.dataset.dt",
+            "identifierPrefix" : "feb01yrplus1"
+          }
+        }, {
+          "dateDimension" : {
+            "name" : "datetwcfiscal.twc_dataset.dt",
+            "title" : "Date twcfiscal",
+            "production" : true,
+            "urn" : "urn:twcfiscal:date",
+            "identifier" : "datetwcfiscal.twc_dataset.dt",
+            "identifierPrefix" : "datetwcfiscal"
+          }
+        }, {
+          "dateDimension" : {
+            "name" : "fiscaloct1.fiscalOct1_dataset.dt",
+            "title" : "Date fiscaloct1",
+            "production" : true,
+            "urn" : "urn:fiscalOct1:date",
+            "identifier" : "fiscaloct1.fiscalOct1_dataset.dt",
+            "identifierPrefix" : "fiscaloct1"
+          }
+        }, {
+          "dateDimension" : {
+            "name" : "date2",
+            "title" : "date2",
+            "production" : true,
+            "urn" : "urn:gooddata:date",
+            "identifier" : "date2.dataset.dt",
+            "identifierPrefix" : "date2"
+          }
+        }, {
+          "dateDimension" : {
+            "name" : "date4s.twc_dataset.dt",
+            "title" : "Date 4sssss",
+            "production" : true,
+            "urn" : "urn:twcfiscal:date",
+            "identifier" : "date4s.twc_dataset.dt",
+            "identifierPrefix" : "date4s"
+          }
+        }, {
+          "dateDimension" : {
+            "name" : "date3",
+            "title" : "date3",
+            "production" : true,
+            "urn" : "urn:gooddata:date",
+            "identifier" : "date3.dataset.dt",
+            "identifierPrefix" : "date3"
+          }
+        }, {
+          "dateDimension" : {
+            "name" : "sone1.twc_dataset.dt",
+            "title" : "Special one 1",
+            "production" : true,
+            "urn" : "urn:twcfiscal:date",
+            "identifier" : "sone1.twc_dataset.dt",
+            "identifierPrefix" : "sone1"
+          }
+        }, {
+          "dateDimension" : {
+            "name" : "sone1",
+            "title" : "Date 4s",
+            "production" : true,
+            "urn" : "urn:gooddata:date",
+            "identifier" : "sone1.dataset.dt",
+            "identifierPrefix" : "sone1"
+          }
+        } ]
+      }
+    }
+  }
+}
